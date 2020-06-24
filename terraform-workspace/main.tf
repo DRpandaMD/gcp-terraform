@@ -12,7 +12,7 @@ provider "google" {
     zone = "us-central1-a"
 }
 
-resource "google_compute_instance" "vm_instance_01" {
+/* resource "google_compute_instance" "ubuntu18_instance_01" {
     name = "ubuntu18-micro"
     machine_type = "f1-micro"
 
@@ -35,9 +35,9 @@ resource "google_compute_instance" "vm_instance_01" {
 
         }
     }
-}
+} */
 
-/* resource "google_compute_instance" "vm_instance_02" {
+resource "google_compute_instance" "rhel8_instance_01" {
     name = "rhel8-micro"
     machine_type = "f1-micro"
 
@@ -60,7 +60,7 @@ resource "google_compute_instance" "vm_instance_01" {
 
         }
     }
-} */
+}
 
 
 
