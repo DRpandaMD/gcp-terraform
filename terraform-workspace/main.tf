@@ -64,6 +64,9 @@ resource "google_compute_instance" "ubuntu18_instance_01" {
 
         }
     }
+
+    # added section for passing in a start up script
+    metadata_startup_script = "${file("/scripts/bootstrap.sh")}"
 }
 
 /* resource "google_compute_instance" "rhel8_instance_01" {
